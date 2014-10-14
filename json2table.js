@@ -85,8 +85,8 @@
                         table.thClass= 'tableHeader';
                         table.trClass = 'clickable';
                         table.tdClass = 'cellLeft';
-                        table.onclickFunction = 'alert';
-                        table.onclickColumn = 'Name';
+                        table.onclickFunction = function(e){lead.selectNewOwner(e)};
+                        table.onclickColumn = 'ID';
                         table.columnsToSkip = [1]; // Array of numeric index of columns to not display starts with 1
                         var dataTable = table.createTable();
                         
